@@ -118,9 +118,9 @@ console.log("---------------")
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let valore1 = 33
-let valore2 = 2
-let valore3 = 11
+let valore1 = 3
+let valore2 = 22
+let valore3 = 111
 
 let big
 let mid
@@ -129,25 +129,39 @@ let low
 if (big === undefined) {
   if (valore1 > valore2 && valore1 > valore3) {
     big = valore1
-    console.log("im working", big)
+    if (valore2 > valore3) {
+      mid = valore2
+      low = valore3
+    }
+    else {
+      mid = valore3
+      low = valore2
+    }
   }
   else if (valore2 > valore1 && valore2 > valore3) {
     big = valore2
-
+    if (valore1 > valore3) {
+      mid = valore1
+      low = valore3
+    }
+    else {
+      mid = valore3
+      low = valore1
+    }
   }
   else {
     big = valore3
+    if (valore1 > valore2) {
+      mid = valore1
+      low = valore2
+    }
+    else {
+      mid = valore2
+      low = valore1
+    }
   }
 }
-
-if (mid === undefined) {
-  if (big !== valore1) {
-    valore1 = big - valore1
-
-
-
-  }
-}
+console.log("questi sono i numeri ordinati", big, mid, low)
 
 
 //   // laterLATERlater
