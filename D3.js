@@ -161,7 +161,7 @@ if (big === undefined) {
     }
   }
 }
-console.log("questi sono i numeri ordinati", big, mid, low)
+console.log("questi sono i numeri in ordine dicendente", big, mid, low)
 
 
 //   // laterLATERlater
