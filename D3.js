@@ -118,49 +118,49 @@ console.log("---------------")
 
 /* SCRIVI QUI LA TUA RISPOSTA */
 
-let valore1 = 3
-let valore2 = 22
-let valore3 = 111
+let valore1 = 33
+let valore2 = 222
+let valore3 = 1000
 
 let big
 let mid
 let low
 
-if (big === undefined) {
-  if (valore1 > valore2 && valore1 > valore3) {
-    big = valore1
-    if (valore2 > valore3) {
-      mid = valore2
-      low = valore3
-    }
-    else {
-      mid = valore3
-      low = valore2
-    }
-  }
-  else if (valore2 > valore1 && valore2 > valore3) {
-    big = valore2
-    if (valore1 > valore3) {
-      mid = valore1
-      low = valore3
-    }
-    else {
-      mid = valore3
-      low = valore1
-    }
+// if (big === undefined) {
+if (valore1 > valore2 && valore1 > valore3) {
+  big = valore1
+  if (valore2 > valore3) {
+    mid = valore2
+    low = valore3
   }
   else {
-    big = valore3
-    if (valore1 > valore2) {
-      mid = valore1
-      low = valore2
-    }
-    else {
-      mid = valore2
-      low = valore1
-    }
+    mid = valore3
+    low = valore2
   }
 }
+else if (valore2 > valore1 && valore2 > valore3) {
+  big = valore2
+  if (valore1 > valore3) {
+    mid = valore1
+    low = valore3
+  }
+  else {
+    mid = valore3
+    low = valore1
+  }
+}
+else {
+  big = valore3
+  if (valore1 > valore2) {
+    mid = valore1
+    low = valore2
+  }
+  else {
+    mid = valore2
+    low = valore1
+  }
+}
+// }
 console.log("questi sono i numeri in ordine discendente", big, mid, low)
 
 
@@ -210,7 +210,7 @@ console.log("---------------")
 //   Modifica la logica del seguente algoritmo in modo che mostri in console il messaggio corretto in ogni circostanza.
 
 
-let val = 1
+let val = 7
 if (val < 10 && val >= 5) {//added "&& val >=5"
   console.log("Meno di 10");
 } else if (val < 5) {
@@ -279,16 +279,10 @@ console.log("---------------")
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 let hi = []
-hi[0] = 1
-hi[1] = 2
-hi[2] = 3
-hi[3] = 4
-hi[4] = 5
-hi[5] = 6
-hi[6] = 7
-hi[7] = 8
-hi[8] = 9
-hi[9] = 10
+hi.push(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)
+
+
+
 
 console.log(hi)
 
